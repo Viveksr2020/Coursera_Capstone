@@ -1,0 +1,99 @@
+Coursera Capstone - REPORT
+Content
+
+1.	Introduction Section :
+1.1 Overview of the "background situation" leading to the problem at hand:
+1.2 Objective to be achieved.
+1.3 Audience for this project.
+
+2.	Data Section:
+2.1 Data of Current Situation (current residence place)
+2.2 Data required to resolve the problem
+2.3 Data sources and data manipulation
+
+3.	Methodology section :
+3.1 Process steps and strategy to achieve overall objective
+3.2 Data Science Methods, machine learning, mapping tools and exploratory data analysis.
+
+4.	Results section
+Discussion of the results and how they help to take a decision.
+
+5.	Discussion section
+Elaboration and discussion on any observations and/or recommendations for improvement.
+
+6.	Conclusion section
+Decision taken and Report Conclusion.
+
+
+ Introduction Section:
+
+Discussion of the business objective and the audience who would be interested in this project.
+
+1.1 Scenario and Background
+I am working professional currently residing in Pune, India. I presently live inside walking distance to metro train station and have access to other transportation routes. Likewise, I fancy several amenities within the neighbourhood, like international preparation restaurants, cafes, food shops, and recreation. I have been offered a good salary offer in Slough, United Kingdom but really worried about my family’s relocation due to this being completely new place, cost of living and availability of seats in school for my two sons. I, therefore want to use my knowledge gained through Coursera course to help me taking very crucial decision of my life.
+
+1.2 Problem to be resolved:
+The challenge to resolve is having the ability to search out a rental lodging unit in Slough City that provides environment which is aligned with my current lifestyle. Therefore, so as to line a basis for comparison, i would like to search out a rental unit subject to the subsequent conditions:
+
+•	Rented apartment with min 2/3 bedrooms with monthly rent to not exceed £1200 per month.
+•	Apartment situated inside walking distance (<=.5 mile) from a railway line station in Slough.
+•	Availability of good Indian restaurant.
+•	Availability of good school in the walking distance.
+
+1.3 Interested Audience:
+I believe this can be a relevant project for people working with Indian IT Service providers managing application delivery services for top UK companies as the approach and methodologies used here area unit applicable all told cases. The utilization of FourSquare information and mapping techniques combined with information analysis can facilitate resolve the key queries arisen. Lastly, this project could be a smart follow case toward the event of knowledge Science skills.
+
+
+
+2. Data Section:
+
+Description of the data and its sources that will be used to solve the problem
+
+2.1 Data of Current Situation
+I had spent good amount of time in Toronto so used that data for comparison. I use Foursquare to spot the venues round the space of residence that square measure then shown within the Toronto map shown in methodology and execution in section three.0. It is a reference for comparison with the required future location in Slough, United Kingdom.
+
+2.2 Data required to resolve the problem
+In order to form a decent selection for rented location in Slough, the subsequent knowledge is required: 
+List/Information on different postal codes in Slough with their Geodata ( latitude & longitude). 
+https://checkmypostcode.uk/slough/slough#.XlfgqC2cZbV
+
+List/Information regarding the Railway stations in Slough with geodata. 
+https://en.wikipedia.org/wiki/Slough#Rail_transport
+Listed residences for rent in Slough space with descriptions ( what percentage beds, price, location, address).
+https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=STATION%5E8315&radius=3.0&propertyTypes=&mustHave=&dontShow=&furnishTypes=&keywords=
+
+List of school within given location.
+
+https://www.compare-school-performance.service.gov.uk/find-a-school-in-england?keywords=Station+Road%2C+Slough%2C+Berkshire&radius=3&searchtype=search-by-location&LocationCoordinates=51.52215%2C-0.64528
+
+
+2.4 How the data will be used to solve the problem
+The data are going to be used as follows:
+Use Foursquare and geopy information to map the highest ten venues for all Slough neighborhoods and clustered in teams.
+Use foursquare and geopy information to map the placement of railway stations, individually and on high of the above-clustered map so as to be able to determine the venues and amenities close to every subway station, or explore every subway location individually.
+Use Foursquare and geopy information to map the placement of rental places, in some type, connected to the subway locations.
+create a map that depicts, as an example, the typical rental value per sq. foot, around a radius of one.0 mile (1.6 km) around every depot - or similar metrics. {i will|i will be able to|i'll} be able to quickly purpose to the popups to understand the relative value per subway space.
+Addresses from rental locations are going to be reborn to geodata( striated muscle, long) victimization Geopy-distance and Nominatim.
+Data are going to be searched in open information sources if out there, from land sites if hospitable reading, libraries or alternative government agencies like subway ny MTA, etc.
+
+2.5 Mapping of Data
+The following maps were created to facilitate the analysis and therefore the selection of the palace to measure. Slough map of Neighbourhoods railway locations, slough map of places for rent. Slough map of clustered venues and neighbourhoods. Combined maps of Slough rent places with subway locations combined maps of Slough rent places with subway locations and venues clusters.
+
+3. Methodology section:
+This section represents the main component of the report where the data is gathered, prepared for analysis. The tools described are used here and the Notebook cells indicates the execution of steps.
+
+The analysis and the stragegy:
+The strategy is based on mapping the above described data in section 2.0, in order to facilitate the choice of at least two candidate places for rent. The choice is made based on the demands imposed : location near a subway, rental price and closer to School. This visual approach and maps with popups labels allow quick identification of location, price and feature, thus making the selection very easy.
+The procesing of these DATA and its mapping will allow to answer the key questions to make a decision:
+•	what is the cost of available rental places that meet the demands?
+•	what is the cost of rent around a mile radius from each subway metro station?
+•	What is the cost of rent around 0.5 mile radius from each school.
+•	what is the area of Slough with best rental pricing that meets criteria established?
+•	What are the venues of the two best places to live? How the prices compare?
+•	Any other interesting statistical data findings of the real estate and overall data.
+
+METHODOLOY EXECUTION - Mapping Data
+Map - Current residence and venues in neighborhood
+for comparison to future Slough renting place
+
+
