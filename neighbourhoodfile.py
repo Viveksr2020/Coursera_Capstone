@@ -78,7 +78,7 @@ from datetime import datetime
 
 from googlemaps import Client
 
-gmaps = googlemaps.Client(key='AIzaSyDdD-JCrFejxneJWEGj8JuNJpcGfANjB0w')
+gmaps = googlemaps.Client(key='xxxxxx')
 
 column_names = ['Postalcode', 'Latitude', 'Longitude']
 
@@ -103,15 +103,11 @@ page = requests.get(url8)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 soupstring = soup.find(class_="threecol")
-# @hidden_cell vivek
-CLIENT_ID = '5IRXC0ZPHIPISLU52MO4HL5H5EGWZYT04FBEGTB0HQ45A5OS' # your Foursquare ID
-CLIENT_SECRET = 'QXOB3XWMPKX3VSQTH2ZG1MQA2GYGHJ3HATGHBRZYAV5DMSO3' # your Foursquare Secret
+# @hidden_cell 
+CLIENT_ID = '' # your Foursquare ID
+CLIENT_SECRET = '' # your Foursquare Secret
 VERSION = '20180605' # Foursquare API version
 
-# @hidden_cell arnesh
-CLIENT_ID = '02LEF0GX5421KX3UOEVRXGDQTTBB3QP4H0ZFV5IZXOK1MLW2' # your Foursquare ID
-CLIENT_SECRET = 'CB4AXJLSIWIXBN0IVTDIV1RG0KXHYHGTUM3W02SVR3VUYOOR' # your Foursquare Secret
-VERSION = '20180605' # Foursquare API version
 
 #print(soupstring)
 Locality_Name=''
